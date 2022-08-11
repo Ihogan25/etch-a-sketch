@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixel Art</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-A-Sketch</title>
 </head>
 <body>
-    
+    <header >
+        <h1>Welcome to Etch-A-Sketch</h1>
+        <p>Time to create some pixel art!</p>
+    </header>
+
+    <!-- section for controls-->
+    <section class="controls">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            <button id="reset">Reset</button>
+            <button id="eraser">Eraser</button>
+            <button id="black">Black</button>
+            <button id="color">Color</button>
+    </section>
+
+    <!--Section for grid-->
+    <section class="container">
+        <!--pixels for the x-axis-->
+            <div class="x-axis">
+                <span class="pixel"></span>
+            </div>
+            <div class="y-axis">
+                
+                <span class="pixel"></span>
+            </div>
+            <div>
+                <span class="pixel"></span>
+            </div>
+            <div>
+                <span class="pixel"></span>
+            </div>
+
+        
+        <!--pixels for the y-axis-->
+ 
+    </section>
+
 </body>
 </html>
