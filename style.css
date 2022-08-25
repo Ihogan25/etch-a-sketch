@@ -8,9 +8,11 @@
     --eraser: #ffffff;
     --black: #000000;
 }
+
 body {
     background-color: bisque;
 }
+
 header {
     text-align: center;
     margin: 2rem 0;
@@ -23,30 +25,20 @@ header {
 }
 
 
-.container {
+.board {
+    width: 40em;
+    height: 40em;
     display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    background-color: white;
+    margin: 5em auto;
+}
+
+
+.pixel {
+    height: 100%;
     width: 100%;
-    height: 100%; 
-    grid-template-columns:repeat(4, 1fr) ;
-    grid-template-rows:repeat(4, 1fr) ;
-    row-gap: 1px;
-    column-gap: 1px;
+    background-color: var(--black);
 }
-
-.pixel{
-    background-color: var(--eraser);
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin: 1px;
-}
-
-.canvas {
-    margin: 3rem auto;
-    background-color: red;
-    width: 50rem;
-    height: 50rem;
-    border: 5px solid black;
-}
-
 
